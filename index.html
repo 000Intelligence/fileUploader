@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fa">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no" />
+		<title>منطقه آپلود</title>
+		<!--  -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<!--  -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!--  -->
+		<link
+			rel="stylesheet"
+			href="/public/css/index.css" />
+		<!--  -->
+	</head>
+	<body class="bg-[#121212]">
+		<noscript>
+			<strong>please enable javascript to run this app</strong>
+		</noscript>
+		<!--  -->
+		<div
+			id="app"
+			class="min-h-[100vh] flex flex-col justify-end items-end">
+			<div class="m-auto p-3 w-full max-w-[960px]">
+				<input
+					type="file"
+					name="upload"
+					id="upload"
+					multiple
+					hidden />
+				<!--  -->
+				<h1
+					class="text-slate-50 font-bold text-[3rem] text-right mb-[1rem] flex justify-center items-center gap-[1rem] max-[480px]:text-[2rem]">
+					<p class="flex justify-center items-center"><ion-icon name="cloud-upload-outline"></ion-icon></p>
+					<span
+						class="inline-block w-full h-[2px] bg-violet-400 opacity-30 flex-1 rounded-md max-[480px]:hidden"></span>
+					<p>منـطـقـه آپلود</p>
+				</h1>
+				<!--  -->
+				<label
+					id="upload-zone"
+					for="upload"
+					class="overflow-hidden cursor-pointer block relative w-full py-[1rem] px-[0.5rem] border-2 rounded-md border-dashed border-white border-opacity-40 duration-300 ease-in-out hover:border-violet-400 upload-zone">
+					<header class="flex flex-col justify-center items-center gap-[0.5rem]">
+						<img
+							src="/assest/Upload.gif"
+							alt="uploading"
+							class="w-[220px] m-auto" />
+						<p class="drag block text-slate-100 text-[1.2rem] text-center">
+							فایل خود را انتخاب و یا در اینجا <span class="text-violet-400"> رها </span> کنید
+						</p>
+						<h2 class="drop hidden font-bold text-slate-100 text-[2rem] text-center">
+							فایل مورد نظر را اینجا <span class="text-violet-400"> رها </span> کنید
+						</h2>
+					</header>
+				</label>
+			</div>
+			<!--  -->
+			<div class="progress-area m-auto p-3 w-full max-w-[960px] flex flex-col"></div>
+		</div>
+		<!--  -->
+		<div class="alert-zone fixed right-5 bottom-5 flex flex-col justify-end items-end gap-2"></div>
+		<!--  -->
+		<script src="/public/script/app.js"></script>
+	</body>
+</html>
