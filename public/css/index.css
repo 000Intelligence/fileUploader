@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "dana";
-	src: url(/fonts/dana/dana-fanum-regular.woff2);
+	src: url(fonts/dana/dana-fanum-regular.woff2);
 }
 
 @tailwind base;
@@ -18,7 +18,7 @@ body {
 		position: absolute;
 		inset: 0;
 		background: rgb(167 139 250 / 20%);
-		mask-image: url(/assest/map-bg.webp);
+		mask-image: url(assest/map-bg.webp);
 		mask-size: cover;
 		mask-repeat: no-repeat;
 		mask-position: center;
